@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Rubik', sans-serif;
+}
+.bg-1{
+    background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 450px;
+    height: 550px;
+    margin-left: -100px;
+    border-radius: 0 0 50% 50%;
+}
+.bg-2{
+    background-color: hsla(293, 100%, 63%, 0.1);
+    width: 250px;
+    height: 550px;
+    border-radius: 500px 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.container{
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+.phone-edge{
+    margin: 8% 8% 5% 22%;
+    height: 400px;
+    width: 455px;
+    background-color: white;
+    padding: 8px 8px 8px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 50px rgb(0, 0, 0, 0.2);
+}
+.phone-screen{
+    background-color: hsl(270, 20%, 96%);
+    height: 384px;
+    border-radius: 17px;
+}
+.chat-head{
+    background-image: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 17px 17px 5px 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+#back{
+    color: white;
+}
+.camera-box{
+    margin: 0 auto;
+    height: 14px;
+    width: 55%;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}
+.head{
+    display: flex;
+    margin: 8px 0 0 10px;
+}
+.head #avatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0.5px 0 2.5px 8px;
+}
+.chat-name{
+    margin-left: 10px;
+}
+.chat-name header{
+    font-weight: bold;
+    font-size: 9px;
+    color: rgb(243, 238, 247);
+    margin-bottom: -6px;
+}
+.chat-name span{
+    font-size: 8px;
+    color: hsl(276, 100%, 81%);
+}
+#dots{
+    margin: 5px 5px 5px 23%;
+    width: 12px;
+    height: 12px;
+}
+.chat-body{
+    padding: 0 8px 15px;
+}
+.dog-facecard{
+    margin: 10px 0 0 25%;
+}
+.dog-facecard img{
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
+}
+.green-text{
+    width: 70%;
+    font-size: 7px;
+    padding: 5px;
+    margin: 4px 0;
+    color: hsl(276, 55%, 52%);
+    background-color: rgba(91, 77, 92, 0.2);
+    border-radius: 10px 10px 10px 5px;
+}
+.my-text{
+    width: 65%;
+    font-size: 7px;
+    background-color: white;
+    color:hsl(271, 15%, 43%);
+    border-radius: 10px 10px 5px 10px;
+    padding: 5px;
+    margin: 4px 0 4px 35%;
+}
+.last{
+    margin-bottom: 10px;
+    margin-left: 55%;
+    width: 45%;
+}
+.walk-option{
+    display: flex;
+    width: 78%;
+    font-size: 7px;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px 10px 10px 5px;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.walk-option span{
+    color: white;
+}
+.walk-option span:first-of-type{
+    margin: 2.5px 15% 2.5px 7px;
+}
+#an-hour{
+    margin-right: 26%;
+}
+.walk-option span:last-of-type{
+    font-size: 12px;
+    font-weight: bold;
+}
+.radio-button{
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(185, 173, 194);
+}
+.chat-input{
+    display: flex;
+    font-size: 10px;
+    color: hsl(206, 6%, 79%);
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 20px;
+    background: url(../images/arrow-right-circle-fill.svg) white no-repeat 130px;
+}
+.chat-input img{
+    margin-left: 22%;
+}
+.paragraph{
+    margin: 32% 40% 25% 0;
+}
+.paragraph h1{
+    font-weight: bold;
+    font-size: 30pt;
+    margin-bottom: 25px;
+}
+.paragraph p{
+    font-size: 14pt;
+    color: hsl(270, 7%, 64%);
+}
+
+@media (max-width: 600px) {
+    .bg-1{
+        background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        width: 400px;
+        height: 370px;
+        margin-left: -220px;
+        border-radius: 0 0 50% 50%;
+    }
+    .bg-2{visibility: hidden;}
+    .container{
+        flex-direction: column; 
+    }
+    .phone-edge{
+        margin: 10% auto 15%;
+        height: 400px;
+        width: 200px;
+        box-shadow: 2px 5px 40px rgb(0, 0, 0, 0.2);
+    }
+    .phone-screen{
+        height: 385px;
+    }
+    .chat-head{
+        margin-bottom: 0;
+    }
+    .camera-box{
+        height: 15px;
+    }
+    #dots{
+        margin: 5px 5px 5px 25%;
+    }
+    .chat-body{
+        padding: 0 6px 15px;
+    }
+    .dog-facecard img{
+        width: 38px;
+        height: 38px;
+    }
+    .walk-option{
+        padding: 6px;
+        width: 77%;
+    }
+    .chat-input{
+        background: url(../images/arrow-right-circle-fill.svg) white no-repeat 145px;
+    }
+    .paragraph{
+        margin: 0 auto 10%;
+    }
+    .paragraph h1{
+        font-size: 28pt;
+        text-align: center;
+    }
+    .paragraph p{
+        font-size: 12pt;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
