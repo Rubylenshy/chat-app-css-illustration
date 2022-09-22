@@ -6,6 +6,15 @@
 html{
     font-family: 'Rubik', sans-serif;
 }
+.chat-input,
+.my-text,
+.dog-facecard,
+.green-text,
+.walk-option{
+    position: relative;
+    z-index: 0;
+}
+
 .bg-1{
     background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     width: 450px;
@@ -25,6 +34,7 @@ html{
 .container{
     display: flex;
     position: absolute;
+    z-index: 5;
     top: 0;
 }
 .phone-edge{
@@ -89,6 +99,7 @@ html{
 }
 .dog-facecard{
     margin: 10px 0 0 25%;
+    animation: slide-left 1.5s;
 }
 .dog-facecard img{
     border-radius: 10px;
@@ -103,6 +114,7 @@ html{
     color: hsl(276, 55%, 52%);
     background-color: rgba(91, 77, 92, 0.2);
     border-radius: 10px 10px 10px 5px;
+    animation: slide-right 1.5s;
 }
 .my-text{
     width: 65%;
@@ -112,6 +124,7 @@ html{
     border-radius: 10px 10px 5px 10px;
     padding: 5px;
     margin: 4px 0 4px 35%;
+    animation: slide-left 1.5s;
 }
 .last{
     margin-bottom: 10px;
@@ -126,6 +139,7 @@ html{
     margin: 5px 0;
     border-radius: 10px 10px 10px 5px;
     background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    animation: slide-right 1.5s;
 }
 .walk-option span{
     color: white;
@@ -155,6 +169,7 @@ html{
     background-color: white;
     border-radius: 20px;
     background: url(../images/arrow-right-circle-fill.svg) white no-repeat 130px;
+    animation: opacity 1.5s;
 }
 .chat-input img{
     margin-left: 22%;
@@ -228,5 +243,37 @@ html{
         text-align: center;
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@keyframes slide-left {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slide-right {
+    from{
+        transform: translateX(-100%);
+        
+    }
+    to{
+        transform: translate(0);
+    }
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
     }
 }
